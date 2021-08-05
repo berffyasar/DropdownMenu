@@ -1,0 +1,120 @@
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f93e59;
+}
+
+.anamenu {
+  width: 200px;
+  padding: .4em 0;
+  background: #ff485b;
+  color: white;
+  text-align: center;
+  font-size: 0;
+}
+.anamenu li {
+
+position: relative;
+
+}
+.anamenu a {
+  position: relative;
+  display: block;    
+  cursor: pointer;
+  margin-bottom: .4em;
+  padding: .4em;
+  font-size: 1.3vw;
+  text-decoration: none;
+  color: white;
+ 
+}
+.anamenu a:active, .anamenu a:focus {
+  background: #e83043;
+}
+.anamenu span {
+  font-size: .625em;
+  font-family: Roboto;
+ 
+}
+
+
+.anamenu > li:hover a {
+  background: #e83043;
+}
+.anamenu > li a:hover {
+  background: #F56356;
+}
+.anamenu > li ul li:hover  {
+  background: #be3124;
+}
+.anamenu>li ul li:hover a{
+    background-color: #be3124;
+}
+.anamenu > li ul ul li:hover  {
+  background: rgb(134, 128, 128);
+}
+.anamenu>li ul ul li:hover a{
+    background-color: rgb(134, 128, 128);
+}
+
+
+
+body div ul ul{
+  display: none;
+  width: 200px;
+}
+
+body div ul ul li {
+  width: 100%;
+}
+
+body div>ul> li:hover > ul{
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  right: 0;
+  animation-name: down;
+  animation-duration: 400ms;
+}
+
+body div ul ul ul{
+  display: none;
+}    
+
+body div ul ul li{
+  position: relative;
+}
+
+body div ul ul li:hover  >ul{
+  display: block;
+  position:absolute;
+  left: 200px;
+  top: 0;
+}
+body div ul ul ul ul{
+  display: none;
+}    
+
+body div ul ul ul li{
+  position: relative;
+}
+
+body div ul ul ul li:hover  >ul{
+  display: block;
+  left: 200px;
+  top: 0;
+}
+
+@keyframes circle {
+  50% {
+    transform: scale(1.26923);
+  }
+}
+@keyframes initials {
+  50% {
+    transform: translateY(-8px) translateZ(0);
+  }
+}
